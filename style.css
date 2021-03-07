@@ -1,0 +1,51 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+
+}
+
+body{
+width:100vw;
+background-color: black;
+}
+
+.loading{
+height: 100vh;
+width: 100vw;
+position: fixed;
+background: black;
+z-index: 2;
+display: block;
+}
+
+.loading p{
+position: absolute;
+top: 50vh;
+left: 50vw;
+font-size: 4rem;
+transform: translate(-50%,-50%);
+color: white;
+ }
+
+.container{
+
+width: 100vw;
+
+}
+
+.content{
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+color: #2d2d2d;
+font-size: 70px;
+line-height: 20%;
+
+}
+
+.content p{
+  display: inline;
+  color: green;
+
+}
