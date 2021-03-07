@@ -1,7 +1,7 @@
 var primes;
 const scope = 1000000;
 
-
+const loading = document.getElementById("loading");
 
 
 
@@ -66,8 +66,8 @@ for (var i = 1; i < scope; i++) {
 
  }
 
- document.getElementById("content").innerHTML= printline
- document.getElementById("loading").style.display = "none";
+ document.getElementById("content").innerHTML= printline;
+ loading.parentNode.removeChild(loading);
   }
 
 
