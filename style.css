@@ -26,6 +26,8 @@ left: 50vw;
 font-size: 4rem;
 transform: translate(-50%,-50%);
 color: white;
+ animation: fade 5s infinite;
+
  }
 
 .container{
@@ -48,4 +50,10 @@ line-height: 20%;
   display: inline;
   color: green;
 
+}
+
+@keyframes fade {
+  0% { opacity: 1;}
+  50% {opacity: 0.1; }
+  100% { opacity: 1; }
 }

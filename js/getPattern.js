@@ -1,13 +1,13 @@
 var smallZ=[];
 var tallZ=[];
-const scope = 1000;
 
-async function readsmallz(){
+
+async function getPattern(shape){
 let indexOfPrime = 0;
 var linebreak;
 var printline="";
 
-const responsePrime = await fetch("1mprimes.txt");
+const responsePrime = await fetch("primes/1mprimes.txt");
 var primes = await responsePrime.text()
 primes = primes.match(/\d+/g);
 
@@ -15,7 +15,10 @@ for (var i = 0; i < primes.length; i++) {
   primes[i] = parseInt(primes[i]);
 }
 /*---------------------------------------------------------------------------------------------------------------*/
-/*
+if (shape=="s") {
+
+
+
 for (var i = 0; i <= primes.length; i++) {
   console.log(i);
   if (primes[i]-2 == primes[i-1] & primes.includes(primes[i]+100) & primes.includes(primes[i]+102)) {
@@ -25,6 +28,10 @@ for (var i = 0; i <= primes.length; i++) {
  }
 
   }
+  console.log(JSON.stringify(smallZ));
+}else if(shape=="t"){
+
+  /*---------------------------------------------------------------------------------------------------------------*/
 
 
   for (var i = 0; i <= primes.length; i++) {
@@ -36,8 +43,8 @@ for (var i = 0; i <= primes.length; i++) {
    }
 
     }
-  */
-console.log(JSON.stringify(tallZ));
- }
+    console.log(JSON.stringify(tallZ));
 
-readsmallz()
+
+  }
+}
